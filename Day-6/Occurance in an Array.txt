@@ -1,0 +1,21 @@
+import java.util.*;
+import java.io.*;
+class HelloWorld 
+{
+    public static void main(String[] args)
+    {
+        int x,i,count=0;
+        int a[]={1,2,3,1,1,4};
+        System.out.println("Enter x Value : ");
+        Scanner o=new Scanner(System.in);
+        x=o.nextInt();
+        for(i=0;i<a.length;i++)
+        {
+            if(a[i]==x)
+            {
+                count++;
+            }
+        }
+        System.out.print("Occurance in an Array : "+count);
+    }
+}

@@ -1,0 +1,28 @@
+import java.util.*;
+import java.io.*;
+class HelloWorld 
+{
+    public static void main(String[] args)
+    {
+        int i,j,temp=0;
+        int a[]={2,4,5,2,5,6};
+        int n=a.length;
+        for(i=0;i<a.length;i++)
+        {
+            for(j=i+1;j<a.length;j++)
+            {
+               if(a[i]==a[j])
+              {
+                System.out.print("First Repeating Element is " +a[j]);
+                temp++;
+                i=n;
+                j=n;
+              }
+           }
+       }
+       if(temp==0)
+       {
+        System.out.print("No Repeating Element");
+       }
+   }
+}

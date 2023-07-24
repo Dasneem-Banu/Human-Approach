@@ -1,0 +1,25 @@
+Factorial Number: 
+---------------
+
+import java.util.*;
+import java.io.*;
+class HelloWorld 
+{
+    public static void main(String[] args)
+    {
+        int n,i,fact=1;
+        System.out.println("Enter n Value : ");
+        Scanner o=new Scanner(System.in);
+        n=o.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+        System.out.println("Factorial of "+ n +" is "+ fact);
+    }
+}
+output:
+Enter n Value : 5
+Factorial of 5 is 120
+--------------------------------------------------------------------------------------------------------------
+
